@@ -7,12 +7,11 @@ function PesquisaJogadores({ favoritarJogador, setResultadoPesquisaJogador }) {
 
   const handlePesquisa = async () => {
     try {
-      // Simulando uma chamada à API (substitua por sua lógica de API real)
+    
       const jogador = { nome: nomeJogador, imagem: 'urn:ietf:wg:oauth:2.0:oob' };
       setResultadoPesquisa(jogador);
 
-      // Aqui, você pode definir o resultado da pesquisa no componente App usando a propriedade setResultadoPesquisaJogador
-      setResultadoPesquisaJogador(jogador); // Certifique-se de que a propriedade seja chamada corretamente
+      setResultadoPesquisaJogador(jogador); 
     } catch (error) {
       console.error('Erro ao buscar jogador:', error);
     }
